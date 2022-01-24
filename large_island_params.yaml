@@ -1,0 +1,28 @@
+common:
+  worlds_dir: "data/input/worlds"
+  output_dir: "data/output"
+  logs_dir: "data/logs"
+  models_dir: "data/models"
+  world_name: "LEEFNUT 1.18 MAP FINAL"
+  lim_tag: "island"
+  xlim: [-155, -66]
+  ylim: [57, 79]
+  zlim: [-384, -285]
+  # xlim: [-225, -200]
+  # ylim: [50, 80]
+  # zlim: [100, 120]
+  
+
+block2vec:
+  embed_dim: 5
+  epochs: 100
+
+singan:
+  num_scales: 4
+  scales: [0.25, 0.50, 0.75, 1.00]
+  learning_rate: 5e-4
+  n_iters: 2501
+  noise_w: 0.1
+
+export:
+  empty_world_dir: "data/input/worlds/Empty World"
